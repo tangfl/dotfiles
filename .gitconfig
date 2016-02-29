@@ -1,0 +1,61 @@
+[user]
+	name = tangfulin
+	email = tangfl@xueqiu.com
+[core]
+	excludesfile = /Users/tangfulin/.gitignore
+	quotepath = false
+	editor = vim
+[alias]
+	last = cat-file commit HEAD
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	unstage = reset HEAD --
+	mg = merge
+	glog = log --pretty=oneline --graph
+	df = difftool
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lp = log --abbrev-commit --decorate --graph --color --pretty="format:%C(yellow)%h%Cred%d\\ %C(cyan)%an%Creset:\\ %Cgreen%s%Creset\\ %ar" --all
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+    short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+    changelog = log --pretty=format:\" * %s\"
+    shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+    d = diff                          # diff unstaged changes
+    dc = diff --cached                # diff staged changes
+    last = diff HEAD^                 # diff last committed change
+    unstage = reset HEAD              # remove files from index (tracking)
+    uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
+    filelog = log -u                  # show changes to a file
+    mt = mergetool                    # fire up the merge tool
+    ss = stash                        # stash changes
+    sl = stash list                   # list stashes
+    sa = stash apply                  # apply stash (restore changes)
+    sd = stash drop                   # drop stashes (destory changes)
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[diff]
+	tool = gvimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = gvimdiff
+[http]
+	sslVerify = false
+[push]
+	default = matching
+[apply]
+   whitespace = nowarn
+
+[gui]
+	recentrepo = /Volumes/Data/code/git/xueqiu/message-platform

@@ -1,0 +1,16 @@
+#
+# default git ignore patterns
+#
+
+.*
+*.bak
+*~
+*.o
+*.pyc
+output/
+.svn
+*.iml
+target/
+log/
+logs/
+
