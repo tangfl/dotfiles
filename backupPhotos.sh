@@ -3,13 +3,14 @@
 # backup photos by year/month/day dir structure
 #
 # mediainfo: https://mediaarea.net/zh-CN/MediaInfo/Download/Mac_OS
-# exif: 
+# exif: port install exif
 #
 
-SOURCE="~/Pictures/photos.photoslibrary/Masters"
+SOURCE="${HOME}/Pictures/photos.photoslibrary/Masters"
 RMSOURCE="false"
 
-TARGET="~/Pictures/photo"
+TARGET="${HOME}/Pictures/photo"
+CMDSHELL="${HOME}/bin/cmd.sh"
 
 function getJPGDateTime() {
     local file="$1"
