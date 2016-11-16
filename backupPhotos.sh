@@ -2,6 +2,9 @@
 #
 # backup photos by year/month/day dir structure
 #
+# mediainfo: https://mediaarea.net/zh-CN/MediaInfo/Download/Mac_OS
+# exif: 
+#
 
 SOURCE="~/Pictures/photos.photoslibrary/Masters"
 RMSOURCE="false"
