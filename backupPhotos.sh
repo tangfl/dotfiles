@@ -14,7 +14,7 @@ CMDSHELL="${HOME}/bin/cmd.sh"
 
 function getJPGDateTime() {
     local file="$1"
-    dt=`exif -m "$file" | grep "Date and Tim" | head -n 1 | awk '{print $4 ":" $5}' | sed "s/-/:/g"`
+    dt=`exif -m "$file" | grep "Date and Time" | grep -v "(" |  head -n 1 | awk '{print $4 ":" $5}' | sed "s/-/:/g"`
     echo $dt
 }
 
